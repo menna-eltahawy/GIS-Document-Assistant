@@ -8,3 +8,4 @@ langchain-text-splitters
 chromadb
 pypdf
 sentence-transformers
+protobuf<5.0.0
