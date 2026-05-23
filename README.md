@@ -1,13 +1,24 @@
-# GIS Document Assistant
+# 🗺️ GIS Document Assistant
 
 A modern, professional RAG-powered Streamlit web application designed to chat with GIS PDF documents using multiple LLM providers (Google Gemini, Groq, OpenRouter).
 
-## Features
-- **Multi-LLM Support**: Seamless switching between Google Gemini, Groq, and OpenRouter with dynamic model selection.
-- **Local Vector Embeddings**: Uses HuggingFace's `all-MiniLM-L6-v2` via `sentence-transformers` for local embedding calculation without relying on external API credits.
-- **Interactive Dashboard**: Clean, dark-themed UI featuring multi-file uploading, metrics tracking, and quick suggestion chips.
-- **Session Tracking**: Real-time evaluation metrics displaying total PDFs, generated chunks, queries asked, and average response times.
-- **Quick Controls**: One-click actions to clear active chat sessions or completely reset runtime storage.
+## 📋 Core Features
+
+| Feature | Description |
+| :--- | :--- |
+| **1. Upload PDF** | Upload GIS-related PDFs (Standards, Tutorials, Manuals). |
+| **2. Process** | Divide documents into chunks and store them in a vector database. |
+| **3. Chat** | Ask questions and get accurate answers based on the document context. |
+| **4. Sources** | Display the exact sources and pages referenced for each answer. |
+
+## 🏆 Bonus Features
+
+| Status | Feature |
+| :---: | :--- |
+| ✅ | **Multi-PDF Support** (Ability to upload and process multiple files simultaneously). |
+| ✅ | **Export Chat to JSON** (Download the conversation history as a JSON file). |
+| ✅ | **Bilingual Support (English/Arabic)** (Dual-language UI with a toggle switch). |
+| ✅ | **Session Statistics** (Track questions, files, average response time, and chunks). |
 
 ## Project Structure
 - `gis_rag_app.py`: The main Streamlit web application.
